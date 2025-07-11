@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>A + J ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    background-color: #fff0f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    font-size: 2.5em;
+    color: #d6336c;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.photo img {
+    width: 140px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.photo span {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 1em;
+}
+        @media (max-width: 600px) {
+            .photo {
+                width: 45%;
+            }
+            .photo img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 3/4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Feliz 1 Año Juntos!</h1>
+    <h2>Te amo mucho ❤️</h2>
+
+    <div class="gallery">
+        <div class="photo"><img src="julio.jpeg" alt="Julio"><span>Julio</span></div>
+        <div class="photo"><img src="agosto.jpeg" alt="Agosto"><span>Agosto</span></div>
+        <div class="photo"><img src="septiembre.jpeg" alt="Septiembre"><span>Septiembre</span></div>
+        <div class="photo"><img src="octubre.jpeg" alt="Octubre"><span>Octubre</span></div>
+        <div class="photo"><img src="noviembre.jpeg" alt="Noviembre"><span>Noviembre</span></div>
+        <div class="photo"><img src="diciembre (3).jpeg" alt="Diciembre"><span>Diciembre</span></div>
+        <div class="photo"><img src="enero (2).jpeg" alt="Enero"><span>Enero</span></div>
+        <div class="photo"><img src="febrero.jpeg" alt="Febrero"><span>Febrero</span></div>
+        <div class="photo"><img src="marzo.jpeg" alt="Marzo"><span>Marzo</span></div>
+        <div class="photo"><img src="abril.jpeg" alt="Abril"><span>Abril</span></div>
+        <div class="photo"><img src="mayo.jpeg" alt="Mayo"><span>Mayo</span></div>
+        <div class="photo"><img src="junio.jpeg" alt="Junio"><span>Junio</span></div>
+    </div>
+</body>
+</html>
