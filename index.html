@@ -5,72 +5,87 @@
     <title>A + J ❤️</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* Fondo GIF fijo detrás del contenido */
+        .gif-fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('cora.gif') center center / cover no-repeat;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
         body {
-    background: #d11f5a url('cora.gif') center center / cover no-repeat fixed;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    min-height: 100vh;
-    box-sizing: border-box;
-}
-.frase-box {
-    background-color: white;
-    border-radius: 20px;
-    padding: 20px 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    margin-bottom: 30px;
-    max-width: 90%;
-}
+            background-color: #fff0f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
 
-h1 {
-    font-size: 2.8em;
-    color: #d6336c;
-    margin-bottom: 10px;
-}
+        .frase-box {
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            max-width: 90%;
+        }
 
-h2 {
-    font-size: 1.6em;
-    color: #333;
-    margin-top: 0;
-    margin-bottom: 30px;
-}
+        h1 {
+            font-size: 2.8em;
+            color: #d6336c;
+            margin-bottom: 10px;
+        }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 24px;
-    width: 100%;
-    max-width: 1000px;
-    justify-items: center;
-    box-sizing: border-box;
-}
+        h2 {
+            font-size: 1.6em;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
 
-.photo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 200px;
-}
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 24px;
+            width: 100%;
+            max-width: 1000px;
+            justify-items: center;
+            box-sizing: border-box;
+        }
 
-.photo img {
-    width: 100%;
-    aspect-ratio: 3/4; /* mantiene proporción uniforme */
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
+        .photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 200px;
+        }
 
-.photo span {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #555;
-    font-size: 1rem;
-}
+        .photo img {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .photo span {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+            font-size: 1rem;
+        }
+
         @media (max-width: 600px) {
             .photo {
                 width: 45%;
@@ -84,10 +99,12 @@ h2 {
     </style>
 </head>
 <body>
+    <div class="gif-fondo"></div>
+
     <div class="frase-box">
-    <h1>¡Feliz 1 Año Juntos!</h1>
-    <h2>Te amo mucho ❤️</h2>
-</div>
+        <h1>¡Feliz 1 Año Juntos!</h1>
+        <h2>Te amo mucho ❤️</h2>
+    </div>
 
     <div class="gallery">
         <div class="photo"><img src="julio.jpeg" alt="Julio"><span>Julio</span></div>
